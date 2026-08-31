@@ -1,0 +1,17 @@
+#botao{
+    background-color: pink;
+    color: purple;
+    border: none;
+    height: 95px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    /* transiciona a cor do botão de forma mais suave */
+    transition: background-color 1s ease;
+}
+
+/* #botao:hover{
+    background-color: rgb(211, 156, 165);
+    color: rgb(80, 2, 80);
+} */
