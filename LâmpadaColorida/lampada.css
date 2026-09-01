@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+
+    /* adiciona a imagem no site */
+    background-image: url(SalãodeDança.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lampada-container{
+    position: relative;
+    margin-bottom: 30px;
+}
+/* circulo lampada */
+.bulbo {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(179, 177, 177);
+    border-radius: 50%;
+    /* Suavidade para a cor mudar  */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/*botao*/
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: rgb(230, 228, 228);
+}
