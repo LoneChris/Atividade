@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="forca.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra Proibida</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1> Palavra Proibida</h1>
+
+        <!-- tela dica -->
+        <div class="dicas-container">
+            <p id="dica-inicial"><strong>Dica Inicial</strong><span id="texto-dica-inicial"></span></p>
+            <button id="btn-dica-vip" onclick="revelarDicaVip()">Liberar Dica VIP</button>
+            <p id="dica-vip" class="hidden"><strong>Dica VIP:</strong><span id="texto-dica-vip"></span></p>
+        </div>
+
+        <!-- vidas e painel -->
+        <div class="status-container">
+            <p>Vidas restantes: <span id="contador-vidas">5</span></p>
+            <div id="visual-vidas">♡♡♡♡♡</div>
+        </div>
+
+        <!-- palavra secreta (traço)-->
+        <div id="palavra-display" class="palavra-display"></div>
+        <!-- letra digitadas -->
+        <p class="letras-usadas">Letras Tentadas: <span id="letras-tentadas">-</span></p>
+
+        <!-- controle de Entrada -->
+        <div class="controles">
+            <div class="grupo-input">
+                <input type="text" id="input-letra" maxlength="1" placeholder="Letra" autocomplete="off">
+                <button onclick="jogarLetra()">Tentar Letra</button>
+            </div>
+
+            <div class="grupo-input aposta-container">
+                <input type="text" id="input-aposta" placeholder="Chute a palavra completa" autocomplete="off">
+                <button onclick="jogarAposta()" class="btn-aposta">Aposta Final</button>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <p id="mensagem" class="mensagem"></p>
+        <button id="btn-reiniciar" class="hidden" onclick="reiniciarJogo()">Jogar Novamente</button>
+
+    </div>
+
+    <script src="forca.js"></script>
+</body>
+</html>
