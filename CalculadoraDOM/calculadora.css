@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;  /* Centraliza a calculadora na horizontal */
+    align-items: center;      /* Centraliza a calculadora na vertical */
+    height: 100vh;            /* Usa toda a altura da tela */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(87, 83, 122);
+}
+
+/* Base da calculadora */
+.calculadora {
+    background-color: rgb(174, 147, 201); /* Cor de fundo da calculadora */
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: rgb(32, 42, 99);/* Cor do título */
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* Entrada e resultados */
+input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right; /* Alinha os números */
+    border: 3px solid rgb(87, 83, 122); /* Borda cinza clara */
+    border-radius: 10px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    background-color: white;
+}
+
+/* Input do reultado */
+#resultado {
+    background-color: white;
+    border-color: rgb(87, 83, 122);
+    color: rgb(17, 10, 56);
+    font-weight: bold;
+}
+
+/* Botoes */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas iguais */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos botoes */
+button {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    color: rgb(133, 55, 136);
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse por cima dos botões */
+button:hover {
+    background-color: rgb(173, 171, 171);
+    transition: background 0.2s, transform 0.1s; /* Efeito ao passar o mouse */
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    transform: scale(0.95); /* efeito de clique ao diminuir tamanho */
+}
+
+/* Botao de igual */
+.bt-igual {
+    grid-column: span 4; /* faz o botao preencher o mesmo espaço que os outros 4 */
+    background-color: rgb(221, 193, 34);
+    color: rgb(133, 55, 136);
+}
+
+.bt-igual:hover {
+    background-color: rgb(184, 146, 43);
+}
